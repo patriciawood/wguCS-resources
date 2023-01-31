@@ -1,0 +1,92 @@
+202301191332
+Status: #lecturenotes
+Tags: [[computer science]], [[java]], [[0000 Zettlekasten/C482]]
+
+
+# Lecture 3: Methods and Object Oriented Programming
+- Overview
+	- Understand methods
+	- Access modigies
+	- Object-Oriented
+	- Abstract Class
+	- Casting
+	- Static/Instant casters
+- Method
+	- Basically a function. Wraps code in container.
+	- Structure
+		- Access modified
+		- Optional specifier
+		- Method name
+		- Parameters
+		- called Method Declaration
+	- Once declared, can be called.
+	- Access Modifer
+		- public
+			- member used in any class
+		- private
+			- member accessed directly by same class
+		- protected
+			- classes in same package
+		- Default
+	- Optional Specifier
+		- static
+			- member belongs to class.
+			- Shared by other objects
+		- abstract
+			- Cannot create object from class.
+		- final
+			- constant variable
+	- Return type
+		- primitive or reference value when called.
+		- void - does not return value
+		- allows data transfer.
+	- Method Naming
+		- Use camelCasing or underscores.
+		- ==Use *verb-noun* format
+			- calculateNet. Action and thing
+	- Parameters
+		- declared in method header (inside parenthesis obvi.)
+		- ==note: create an exclaidraw visual of different method parts
+		- num vals passed must match parameters declared.
+	- Arguments
+		- value passed into method when called. 
+- Constructors and Objects
+	- constructors have no return type.
+	- default constructor
+		- created by java if not defined. Assigns default values to fields.
+		- Writing your own overwrites it
+- object-oriented principles
+	- two princliples needed
+	- Encapsulation
+		- protects/hides data logic from program (like a safe)
+		- *private* access modifier. 
+		- variables Can only be accesssed via getters and setters.
+		- fields private most of the time. 
+	- Inheritance
+		- One or more classes to inherit (subclasses) public or protected members from another class (super class).
+		- Does not work in reverse.
+		- Use ```extend``` keyword.
+		- How look UML
+			- Arrows 
+				- ![[Pasted image 20230119140258.png]]
+			- Subclasses point to Superclass.
+			- Superclass is generic.
+			- Methods in Animal class can be called in Dog and Cat classes. (setters and getters in this case.)
+		- Point: Reduces redundancy.
+	- Exercise: Continue [Animal Application](C:\Users\pdugge1\IdeaProjects\PDApplicationMain)
+		- Created Setters and Getters
+		- included ```extends``` to have Dog/Cat subclasses inherit from Animal superclass.
+
+- Super() Command
+	- allows subclass to call constructor in superclass.
+	- must be called in subclass with matching arguments.
+	- must be first statement in subclass constructor.
+- Exercise 2: Super() Command
+	- Created constructor in Animal superclass to override default constructor.
+	- ![[Pasted image 20230119141845.png]]
+		- Super() is highlighted.
+	- Added ``Super()`` to Dog and Cat subclassess.
+	- In Main, change the new Dog and Cat objects and delete the setters.
+		- ![[Pasted image 20230119142128.png]]
+# References
+- [Lecture 3](https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2180bd98-78b8-4ed7-8b30-ab49011bf5e9)
